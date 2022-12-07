@@ -13,6 +13,39 @@ export const HistoryContainer = styled.main`
   }
 `
 
+export const HistoryHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    border: 0;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${(props) => props.theme['yellow-700']};
+
+    gap: 0.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: transparent;
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      transition: color 0.2s ease;
+      color: ${(props) => props.theme['yellow-900']};
+    }
+  }
+`
+
 export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
@@ -82,5 +115,17 @@ export const Status = styled.span<StatusProps>`
     height: 0.5rem;
     border-radius: 50%;
     background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
+  }
+`
+
+export const HistoryEmpty = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  strong {
+    color: ${(props) => props.theme['gray-400']};
   }
 `

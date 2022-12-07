@@ -51,6 +51,12 @@ export function cyclesReducer(state: CyclesState, action: any) {
         draft.cycles[currentCycleIndex].finishedDate = new Date()
       })
     }
+    case ActionTypes.REMOVE_ALL_CYCLES: {
+      return produce(state, (draft) => {
+        localStorage.clear()
+        draft.cycles = []
+      })
+    }
     default:
       return state
   }
