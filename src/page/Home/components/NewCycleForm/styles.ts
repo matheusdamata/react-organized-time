@@ -16,7 +16,7 @@ const BaseInput = styled.input`
   background: transparent;
   height: 2.5rem;
   border: 0;
-  border-bottom: 2px solid ${(props) => props.theme['gray-500']};
+  border-bottom: 2px solid ${(props) => props.theme['yellow-700']};
   font-weight: bold;
   font-size: 1.125rem;
   padding: 0 0.5rem;
@@ -24,7 +24,7 @@ const BaseInput = styled.input`
 
   &:focus {
     box-shadow: none;
-    border-color: ${(props) => props.theme['green-500']};
+    border-color: ${(props) => props.theme['yellow-900']};
   }
 
   &::placeholder {
