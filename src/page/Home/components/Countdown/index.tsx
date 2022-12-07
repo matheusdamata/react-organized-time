@@ -36,6 +36,7 @@ export function Countdown() {
 
     return () => {
       clearInterval(interval)
+      document.title = 'Tempo Organizador'
     }
   }, [
     activeCycle,

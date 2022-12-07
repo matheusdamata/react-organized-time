@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { formatDistanceToNow } from 'date-fns'
 import ptBR from 'date-fns/esm/locale/pt-BR'
 import { CyclesContext } from '../../contexts/CyclesContext'
@@ -9,7 +9,6 @@ import {
   HistoryList,
   Status,
 } from './styles'
-import { Cycle } from '../../reducers/cycles/reducer'
 
 export function History() {
   const { cycles, removeAllCycles } = useContext(CyclesContext)
