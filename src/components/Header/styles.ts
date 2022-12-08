@@ -5,9 +5,16 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  transition: all 0.5s ease;
+
   img {
-    width: 48px;
+    width: 3rem;
     height: 3rem;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   nav {

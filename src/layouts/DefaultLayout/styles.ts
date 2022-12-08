@@ -11,4 +11,13 @@ export const LayoutContainer = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    max-width: 45rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 23rem;
+    padding: 1rem;
+  }
 `

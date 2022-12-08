@@ -19,24 +19,26 @@ export function NewCycleForm() {
       />
 
       <datalist id="task-suggestions">
-        <option value="Projeto E-commerce" />
-        <option value="Projeto Single Page" />
+        <option value="Projeto Landing Page" />
+        <option value="Projeto Pessoal" />
         <option value="Projeto Social" />
       </datalist>
 
-      <label htmlFor="minutesAmount">durante</label>
-      <MinutesAmountInput
-        type="number"
-        id="minutesAmount"
-        placeholder="00"
-        step={5}
-        min={5}
-        max={60}
-        disabled={!!activeCycle}
-        {...register('minutesAmount', { valueAsNumber: true })}
-      />
+      <div>
+        <label htmlFor="minutesAmount">durante</label>
+        <MinutesAmountInput
+          type="number"
+          id="minutesAmount"
+          placeholder="00"
+          step={5}
+          min={5}
+          max={60}
+          disabled={!!activeCycle}
+          {...register('minutesAmount', { valueAsNumber: true })}
+        />
 
-      <span>minutos.</span>
+        <span>minutos.</span>
+      </div>
     </FormContainer>
   )
 }
