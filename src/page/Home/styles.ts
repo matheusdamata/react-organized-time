@@ -48,7 +48,7 @@ export const BaseCountdownButton = styled.button`
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 `
 
