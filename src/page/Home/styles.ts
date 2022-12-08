@@ -21,7 +21,7 @@ export const HomeContainer = styled.main`
     gap: 3.5rem;
 
     @media (min-width: 320px) and (max-width: 767px) {
-      gap: 2rem;
+      gap: 1.75rem;
     }
   }
 `
@@ -48,7 +48,7 @@ export const BaseCountdownButton = styled.button`
   }
 
   @media (min-width: 320px) and (max-width: 767px) {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 `
 
