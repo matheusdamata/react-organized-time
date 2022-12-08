@@ -13,6 +13,14 @@ export const HistoryContainer = styled.main`
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 2rem 0;
+
+    h1 {
+      font-size: 1.125rem;
+    }
+  }
 `
 
 export const HistoryHeader = styled.div`
@@ -44,6 +52,10 @@ export const HistoryHeader = styled.div`
     &:not(:disabled):hover {
       transition: color 0.2s ease;
       color: ${(props) => props.theme['yellow-900']};
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 0.875rem;
     }
   }
 `
